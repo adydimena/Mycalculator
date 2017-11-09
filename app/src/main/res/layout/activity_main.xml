@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.ady.mycalculator.MainActivity">
+
+    <TextView
+        android:layout_width="375dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/memorydispay"
+        android:textColor="@color/memory"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:singleLine="false"
+        android:scrollbars="vertical"
+        />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="375sp"
+        android:height="200sp"
+        android:maxLines="4"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:id="@+id/numbersField"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:orientation="horizontal"
+        android:layout_gravity="left|bottom"
+        android:paddingBottom="30sp"
+        >
+
+
+
+        <Button
+
+            android:id="@+id/clear"
+            android:onClick="clear"
+            android:text="C"
+            android:textColor="@android:color/holo_red_dark"
+            />
+        <Button
+
+            android:id="@+id/Delete"
+            android:onClick="delete"
+            android:text="DEL"
+            />
+        <Button
+
+            android:id="@+id/percentage"
+            android:onClick="percentage"
+            android:text="%"
+            />
+        <Button
+
+            android:id="@+id/division"
+            android:onClick="division"
+            android:text="/"
+            />
+        <Button
+
+            android:id="@+id/digit7"
+            android:onClick="showdigit"
+            android:text="7"
+            />
+        <Button
+
+            android:id="@+id/digit8"
+            android:onClick="showdigit"
+            android:text="8"
+            />
+        <Button
+
+            android:id="@+id/digit9"
+            android:onClick="showdigit"
+            android:text="9"
+            />
+        <Button
+
+            android:id="@+id/multiplication"
+            android:onClick="Multiplication"
+            android:text="*"
+            />
+        <Button
+
+            android:id="@+id/digit4"
+            android:onClick="showdigit"
+            android:text="4"
+            />
+        <Button
+
+            android:id="@+id/digit5"
+            android:onClick="showdigit"
+            android:text="5"
+            />
+        <Button
+
+            android:id="@+id/digit6"
+            android:onClick="showdigit"
+            android:text="6"
+            />
+        <Button
+
+            android:id="@+id/subtration"
+            android:onClick="subtration"
+            android:text="-"
+            />
+        <Button
+
+            android:id="@+id/digit1"
+            android:onClick="showdigit"
+            android:text="1"
+            />
+        <Button
+
+            android:id="@+id/digit2"
+            android:onClick="showdigit"
+            android:text="2"
+            />
+        <Button
+
+            android:id="@+id/digit3"
+            android:onClick="showdigit"
+            android:text="3"
+            />
+        <Button
+
+            android:id="@+id/addition"
+            android:onClick="Add"
+            android:text="+"
+            />
+        <Button
+
+            android:id="@+id/history"
+            android:onClick="history"
+            android:text="H"
+            />
+        <Button
+
+            android:id="@+id/digit0"
+            android:onClick="showdigit"
+            android:text="0"
+            />
+        <Button
+
+            android:id="@+id/digitdecimal"
+
+            android:text="."
+            />
+        <Button
+
+            android:id="@+id/equal"
+            android:onClick="equal"
+            android:text="="
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+
+
+
+
+    </GridLayout>
+
+</LinearLayout>

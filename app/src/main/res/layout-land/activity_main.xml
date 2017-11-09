@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0sp"
+    android:gravity="top|right"
+    android:orientation="vertical"
+    android:paddingTop="0sp"
+    tools:context="com.example.ady.mycalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/memorydispay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:maxLines="1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@color/memory"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/memorydispay"
+        android:height="50sp"
+        android:maxLines="1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+
+    <GridLayout
+        android:id="@+id/numbersField"
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="270sp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/display"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:paddingBottom="0sp"
+        android:rowCount="5">
+
+
+        <Button
+
+
+            android:id="@+id/clear"
+            android:onClick="clear"
+            android:text="C"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <Button
+
+            android:id="@+id/Delete"
+            android:onClick="delete"
+            android:text="DEL" />
+
+        <Button
+
+            android:id="@+id/percentage"
+            android:onClick="percentage"
+            android:text="%" />
+
+        <Button
+
+            android:id="@+id/division"
+            android:onClick="division"
+            android:text="/" />
+
+        <Button
+
+            android:id="@+id/digit7"
+            android:onClick="showdigit"
+            android:text="7" />
+
+        <Button
+
+            android:id="@+id/digit8"
+            android:onClick="showdigit"
+            android:text="8" />
+
+        <Button
+
+            android:id="@+id/digit9"
+            android:onClick="showdigit"
+            android:text="9" />
+
+        <Button
+
+            android:id="@+id/multiplication"
+            android:onClick="Multiplication"
+            android:text="*" />
+
+        <Button
+
+            android:id="@+id/digit4"
+            android:onClick="showdigit"
+            android:text="4" />
+
+        <Button
+
+            android:id="@+id/digit5"
+            android:onClick="showdigit"
+            android:text="5" />
+
+        <Button
+
+            android:id="@+id/digit6"
+            android:onClick="showdigit"
+            android:text="6" />
+
+        <Button
+
+            android:id="@+id/subtration"
+            android:onClick="subtration"
+            android:text="-" />
+
+        <Button
+
+            android:id="@+id/digit1"
+            android:onClick="showdigit"
+            android:text="1" />
+
+        <Button
+
+            android:id="@+id/digit2"
+            android:onClick="showdigit"
+            android:text="2" />
+
+        <Button
+
+            android:id="@+id/digit3"
+            android:onClick="showdigit"
+            android:text="3" />
+
+        <Button
+
+            android:id="@+id/addition"
+            android:onClick="Add"
+            android:text="+" />
+
+        <Button
+
+            android:id="@+id/history"
+            android:onClick="history"
+            android:text="H" />
+
+        <Button
+
+            android:id="@+id/digit0"
+            android:onClick="showdigit"
+            android:text="0" />
+
+        <Button
+
+            android:id="@+id/digitdecimal"
+
+            android:text="." />
+
+        <Button
+
+            android:id="@+id/equal"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="equal"
+            android:text="="
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/numbersField"
+        android:layout_below="@+id/display"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:paddingBottom="0sp"
+        android:rowCount="5"
+
+        >
+
+
+        <Button
+
+            android:id="@+id/root"
+            android:onClick="do2root"
+            android:text="^2Root" />
+
+        <Button
+
+            android:id="@+id/square"
+            android:onClick="dosquare"
+            android:text="^2" />
+        <Button
+
+
+            android:id="@+id/log"
+            android:onClick="dolog"
+            android:text="Log"
+            />
+
+        <Button
+
+            android:id="@+id/ln"
+            android:onClick="doLn"
+            android:text="LN" />
+
+        <Button
+
+            android:id="@+id/arccosi"
+            android:onClick="doArchcosi"
+            android:text="Arccosin" />
+        <Button
+
+
+            android:id="@+id/arcsin"
+            android:onClick="doArcSin"
+            android:text="Arcsin"
+             />
+
+        <Button
+
+            android:id="@+id/showe"
+            android:onClick="showE"
+            android:text="e" />
+
+        <Button
+
+            android:id="@+id/tan"
+            android:onClick="doTan"
+            android:text="tan" />
+
+        <Button
+
+            android:id="@+id/cos"
+            android:onClick="doCos"
+            android:text="COS" />
+
+        <Button
+
+            android:id="@+id/sin"
+            android:onClick="doSin"
+            android:text="SIN" />
+
+    </GridLayout>
+
+</RelativeLayout>
